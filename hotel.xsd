@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hotel">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="visitors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="visitor" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="surname" type="xs:string" />
+                    <xs:element name="lastname" type="xs:string" />
+                    <xs:element name="age" type="xs:int" />
+                    <xs:element name="phone" type="xs:string" />
+                    <xs:element name="number_room" type="xs:int" />
+                    <xs:element name="cost_room" type="xs:string" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="staff">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="staf" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="job" type="xs:string" />
+                    <xs:element name="age" type="xs:int" />
+                    <xs:element name="salary" type="xs:string" />
+                    <xs:element name="term_work" type="xs:string" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rooms">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="room" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="number" type="xs:int" />
+                    <xs:element name="size" type="xs:string" />
+                    <xs:element name="bed_count" type="xs:int" />
+                    <xs:element name="class" type="xs:string" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="breakfasts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="breakfast" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="eat_count" type="xs:int" />
+                    <xs:element name="cost" type="xs:int" />
+                    <xs:element name="star" type="xs:int" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="raspisanie_uborki">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="raspisanie" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="time" type="xs:string" />
+                    <xs:element name="staff_count" type="xs:int" />
+                    <xs:element name="item_count" type="xs:int" />
+                    <xs:element name="cost" type="xs:int" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

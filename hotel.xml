@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="hotel.dtd" type="application/xml-dtd"?>
 
-<hotel>
+<hotel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="./hotel.xsd"
+    >
     <visitors>
         <visitor id="id_1">
             <name>
